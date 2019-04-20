@@ -1,0 +1,209 @@
+/*Zocial*/
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+[class*="zocial-"]:before {
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+  color: black;
+}
+
+/*Header*/
+
+.container-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 30%;
+  margin-top: 25px;
+}
+
+.img-logo {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 220px;
+}
+
+.links {
+  box-sizing: border-box;
+  width: 30%;
+  margin-top: 70px;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.zocial-linkedin, .zocial-github, .zocial-email {
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 100%;
+}
+
+.title {
+  width: 40%;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.name {
+  font-weight: lighter;
+  width: 100%;
+}
+
+.line {
+  margin-bottom: 10px;
+	width: 100%;
+}
+
+hr {
+  border: 0;
+  height: 10px;
+	box-shadow: 0 10px 10px -10px gray inset;
+  width: 100%;
+}
+
+/*Main Image*/
+
+.container-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Projects*/
+
+.cover {
+  width: 100%;
+  height: 650px;
+}
+
+.container-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects {
+  width: 98%;
+  margin-left: 2%;
+}
+
+h2 {
+  text-shadow: 2px 2px 8px #A9A9A9;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.project-1, .project-2, .project-3 {
+  text-align: center;
+}
+
+.project-image {
+  height: 200px;
+  width: 100%;
+}
+
+/*Footer*/
+
+footer {
+  background-color: gray;
+  width: 100%;
+  font-size: 15px;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 1280px){
+  .container {
+    margin-left: auto ;
+    margin-right: auto ;
+    max-width: 1280px;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .links {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 850px) {
+  .cover {
+    height: 450px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .img-logo {
+    max-width: 180px;
+  }
+
+  .links {
+    margin-top: 60px;
+  }
+
+  .zocial-linkedin, .zocial-github, .zocial-email {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .logo {
+    width: 50%;
+    order: 1;
+  }
+
+  .img-logo {
+    max-width: 150px;
+  }
+
+  .title {
+    width: 50%;
+    font-size: 100%;
+    order: 2;
+  }
+
+  .links {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    order: 3;
+  }
+
+  .line {
+    margin-bottom: 0;
+    order: 4;
+  }
+
+  .zocial-linkedin, .zocial-github, .zocial-email {
+    display: inline;
+    margin: 10%;
+ }
+
+  .zocial-text {
+    display: none;
+  }
+
+  .cover {
+    height: 250px;
+  }
+
+}
